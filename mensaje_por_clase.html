@@ -15,13 +15,23 @@
 
 
 	<script>
-		function encontrarMensajes(){
+	
            var arrayMensajes = document.getElementsByClassName("mensaje");
 		   var numeroMensajes = arrayMensajes.length;
-		   var totalMensajes = numeroMensajes.getElementById("parrafo");
-		     
-		   }
-	
+ 
+	       function mensajePantalla (){
+		      if (numeroMensajes === 1){ 
+                alert ("Es muy poco");
+	        } if (numeroMensajes > 2 && numeroMensajes < 4){
+                alert ("No está mal");
+			} else {
+                alert ("Son muchos");
+			}
+		}
+
+		mensajePantalla();
+	 
+	            		
 	</script>
 </body>
 </html>
